@@ -1,0 +1,179 @@
+:root{
+  --font: 'Bebas Neue', cursive;
+  --back: rgb(0,23,45);
+  --back-ii: linear-gradient(90deg, rgba(0,23,45,1) 0%, rgba(57,85,119,1) 50%, rgba(0,23,45,1) 100%);
+  --gradiente: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,52,1) 35%, rgba(0,64,77,1) 100%);
+  --back-iii: #000;
+  
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+  
+body{
+  background: var(--back-ii);
+  background: linear-gradient(90deg, #ddd, #eee, #ddd)
+}
+
+header{
+  position:sticky;
+  top: 0;
+  background: var(--gradiente);
+  padding: .8rem 1.2rem;
+  z-index: 10;
+}
+
+.max{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+header div a{
+  display:flex;
+  align-items: center;
+  text-decoration: none;
+  color:white;
+  gap:.4rem
+}
+
+header div a img{
+  max-width: 32px;
+}
+
+header div a h1{
+  display:inline-block;
+  font-family: var(--font);
+  margin-bottom: 0;
+  padding-top:.2rem;
+  font-size: 2rem;
+}
+
+header div nav{
+  display:flex;
+  align-self: center;
+}
+
+header div nav ul{
+  padding-left: 0;
+  display:flex;
+  margin-bottom: 0;
+  gap:1rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+header div nav ul li{
+  list-style-type: none;
+}
+
+header div nav ul li a{
+  padding-left: none;
+  font-size: .9rem;
+}
+
+.max h2{
+  font-family: var(--font);
+  letter-spacing: .2rem;
+  font-size: 1.5rem;
+  color:#304B6B;
+  margin: 2rem 0 1rem auto;
+  margin-left: auto;
+}
+
+section #carouselExampleIndicators .carousel-inner div img{
+  /* background-color:red; */
+  width:80% !important;
+  margin: 0 auto;
+  padding:2rem;
+} 
+/* .carousel-inner div img */
+section #carouselExampleIndicators {
+  background: url(/potrero_final-main/public/img/carousel/ofertas_fondo.png);
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+#tarjetas .max.dos{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap:1rem;
+}
+
+.carta{
+  display:flex;
+  flex-direction: column;
+  gap:1rem;
+  align-items: center;
+  padding:5vh 0;
+  background-color:#eee;
+  /* background: var(--back-iii); */
+  margin: 1.5rem 0;
+  border-radius:.5rem;
+  border: 2px solid #ccc;
+  font-weight: bold;
+}
+
+.carta i{
+  font-size: 3rem;
+}
+
+#icon-grid div div i{
+  font-size: 2rem;
+  padding:1rem;
+}
+
+.tarjetita{
+  background-color:#eee;
+  border: 1px solid grey;
+  border-radius:.5rem;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.tarjetita_descripcion{
+  background-color: rgb(208, 217, 243);
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+  padding:1rem 0 0 0;
+}
+
+.tarjetita_titulo{
+  font-weight: bold;
+  font-size:1.1rem;
+}
+
+.tarjetita_boton{
+  background-color:#000;
+  color:white;
+  margin:1rem 0;
+  padding:.3rem .8rem;
+  /* align-self: flex-end; */
+  /* margin-right: 1rem; */
+}
+
+.precio{
+  font-weight: bolder;
+  font-size:2.2rem;
+}
+
+#productos-grid{
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  border-radius: .5rem;
+  overflow: hidden;
+  gap:1rem;
+}
+
+#productos-grid div img{
+  width: 100%;
+}
