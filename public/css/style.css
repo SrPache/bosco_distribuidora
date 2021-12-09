@@ -93,7 +93,7 @@ section #carouselExampleIndicators .carousel-inner div img{
 } 
 /* .carousel-inner div img */
 section #carouselExampleIndicators {
-  background: url(/potrero_final-main/public/img/carousel/ofertas_fondo.png);
+  background: url(/public/img/carousel/ofertas_fondo.png);
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
